@@ -32,7 +32,6 @@ services:
     ports:
       - 5050:5050
       - 5678:5678 # debug port
-
   redis:
     image: redis:latest
     container_name: redis
