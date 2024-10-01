@@ -1,5 +1,5 @@
 # Using a slim version for a smaller base image
-FROM python:3.11.6-slim-bullseye
+FROM python:3.12.5-slim-bullseye@sha256:cf26ec2ab19cd38e57658f28f616050f854bf9d19d7530574aed86918e4d2ccd
 
 # Install GEOS library, Rust, and other dependencies, then clean up
 RUN apt-get clean && apt-get update && apt-get install -y \
